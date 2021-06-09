@@ -1,9 +1,11 @@
 const readlineSync = require("readline-sync");
-let number=1
-while (number <= 100) {
+
+for (let number = 1; number <= 100; ++number) {
     if ((number % 2) == 0) {
         console.log(number / 2)
-    } else {
+  } else {
         console.log(number * 3)
     }
 }
+
+
