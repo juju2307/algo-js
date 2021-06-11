@@ -4,9 +4,20 @@ class Circle {
         this.yPos = yPos;
         this.radius = radius;
     }
+   
+    get surface() {
+
+        return Math.PI * this.radius * this.radius;
+    }
     move(xOffset, yOffset) {
 
+      this.xPos += xOffset;
+      this.yPos += yOffset;
+
     }
-    get surface()
 }
-return Math.PI * (this.radius * this.radius);
+const cercle = new Circle(5, 8, 3);
+
+console.log(cercle.surface);
+
+
